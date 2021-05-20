@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:text="Asynch Task and Restful API" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fake_downloder_click"
+        android:text="Fake Downloader"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="chuck_api_click"
+            android:text="CHUCK API"
+            tools:ignore="OnClick" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAT API"
+            android:onClick="cat_api_click"
+            android:layout_weight="1"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_chuck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOKE will come"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_catview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>
